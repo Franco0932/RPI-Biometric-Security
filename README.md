@@ -3,7 +3,7 @@ Sistema de seguridad inteligente basado en Raspberry Pi 4 y Python. Implementa a
 
 ## Características Principales
 
-* [cite_start]**Autenticación de Doble Factor:** Requiere ingresar una contraseña numérica en un teclado matricial y validación biométrica mediante huella dactilar para desbloquear la cerradura[cite: 45, 47].
+**Autenticación de Doble Factor:** Requiere ingresar una contraseña numérica en un teclado matricial y validación biométrica mediante huella dactilar para desbloquear la cerradura[cite: 45, 47].
 * **Modo Vigilancia (Intrusión):** Monitoreo continuo mediante sensor ultrasónico. [cite_start]Si se detecta un objeto a menos de 10 cm, se dispara una alarma sonora (Buzzer)[cite: 40, 42].
 * **Interfaz de Usuario:** Menú interactivo visualizado en una pantalla LCD 16x2 para gestión del sistema .
 * **Gestión Local:**
@@ -14,7 +14,7 @@ Sistema de seguridad inteligente basado en Raspberry Pi 4 y Python. Implementa a
 
 ## Hardware Requerido
 
-[cite_start]El sistema utiliza los siguientes componentes electrónicos conectados a la Raspberry Pi 4[cite: 59, 61]:
+El sistema utiliza los siguientes componentes electrónicos conectados a la Raspberry Pi 4[cite: 59, 61]:
 
 | Componente | Modelo | Función | Protocolo/Conexión |
 | :--- | :--- | :--- | :--- |
@@ -28,7 +28,7 @@ Sistema de seguridad inteligente basado en Raspberry Pi 4 y Python. Implementa a
 
 ## Diagrama de Conexiones (Pinout)
 
-[cite_start]Las conexiones físicas a la Raspberry Pi están configuradas de la siguiente manera [cite: 474-512]:
+Las conexiones físicas a la Raspberry Pi están configuradas de la siguiente manera [cite: 474-512]:
 
 * **Sensor Ultrasónico (HC-SR04):**
     * `Trig` -> GPIO 23 (Pin 16)
@@ -49,7 +49,7 @@ Sistema de seguridad inteligente basado en Raspberry Pi 4 y Python. Implementa a
 
 ## Estructura del Proyecto
 
-[cite_start]El código está modularizado para facilitar el mantenimiento y la programación concurrente [cite: 96-469]:
+El código está modularizado para facilitar el mantenimiento y la programación concurrente [cite: 96-469]:
 
 * `main.py`: Script principal. Gestiona la máquina de estados, el menú en el LCD y la lógica de autenticación.
 * `huella.py`: Interfaz con la librería `pyfingerprint` para registrar y verificar huellas.
@@ -76,4 +76,4 @@ Sistema de seguridad inteligente basado en Raspberry Pi 4 y Python. Implementa a
     ```bash
     python3 main.py
     ```
-    * [cite_start]La contraseña por defecto (si no existe archivo) es `1234`[cite: 116].
+    *La contraseña por defecto (si no existe archivo) es `1234`[cite: 116].
